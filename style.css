@@ -1,399 +1,409 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: Verdana, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Segoe UI', Arial, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 body {
-    color: #CAC6C1;
-    background-color: #2c2f33;
-    display: flex;
-    flex-direction: column;
+  color: #cac6c1;
+  background-color: #2c2f33;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 /* hover rgb(41, 41, 41); */
 
 a:hover {
-    color: rgb(119, 119, 119);
+  color: rgb(119, 119, 119);
 }
 
 /* -------------------------------------------------- */
 
 ::-webkit-scrollbar {
-    width: 12px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #888;
+  background: #888;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #555;
+  background: #555;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #464646;
+  background: #464646;
 }
 
 /* -------------------------------------------------- */
 
 header {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 header a:hover {
-    color: inherit;
+  color: inherit;
 }
 
-header h1, header h3 {
-    padding: 0 0 0 100px;
+header h1,
+header h3 {
+  padding: 0 0 0 100px;
 }
 
 header h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 header h3 {
-    font-size: 1.5rem;
-    margin-top: -25px;
+  font-size: 1.5rem;
+  margin-top: -25px;
 }
 
 header img {
-    float: right;
-    padding: 0;
+  float: right;
+  padding: 0;
 }
 
 /* -------------------------------------------------- */
 
 nav {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    box-shadow: 0 3px 10px #222529;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 3px 10px #222529;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0 40px;
-    overflow: hidden;
-    background-color: #222A3A;
+  list-style-type: none;
+  padding: 0 40px;
+  overflow: hidden;
+  background-color: #222a3a;
 }
 
 nav ul li {
-    float: left;
+  float: left;
 }
 
 nav ul li a {
-    display: block;
-    color: inherit;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: inherit;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 nav ul li:last-child {
-    float: right;
+  float: right;
 }
 
 nav ul li:nth-last-child(2) {
-    float: right;
+  float: right;
 }
 
 nav ul li a:hover {
-    color: inherit;
-    background-color: rgb(41, 41, 41);
+  color: inherit;
+  background-color: rgb(41, 41, 41);
 }
 
 .dropdown ul li {
-    float: none;
+  float: none;
 }
 
-.dropdown ul li:last-child, .dropdown ul li:nth-last-child(2) {
-    float: none;
+.dropdown ul li:last-child,
+.dropdown ul li:nth-last-child(2) {
+  float: none;
 }
 
 .dropdownMenu {
-    display: none;
-    position: absolute;
-    min-width: 140px;
-    padding: 0;
-    z-index: 100;
-    box-shadow: 0 3px 10px #222529, 3px 0 10px #222529;
+  display: none;
+  position: absolute;
+  min-width: 140px;
+  padding: 0;
+  z-index: 100;
+  box-shadow: 0 3px 10px #222529, 3px 0 10px #222529;
 }
 
 .dropdown:hover .dropdownMenu {
-    display: block;
+  display: block;
 }
 
 .dropdownShort div {
-    padding: 10px 0;
-    text-align: center;
-    background-color: #222A3A;
-    display: none;
-    font-weight: bold;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #222a3a;
+  display: none;
+  font-weight: bold;
 }
 
 /* -------------------------------------------------- */
 
 aside {
-    float: right;
-    width: 30%;
-    background-color: #222529;
-    padding: 10px;
-    border-radius: 0.5em;
+  float: right;
+  width: 30%;
+  background-color: #222529;
+  padding: 10px;
+  border-radius: 0.5em;
 }
 
 .sectieNume {
-    padding: 0 0 0 15px;
-    margin-bottom: 10px;
-    font-family: 'Segoe UI', Arial, sans-serif;
+  padding: 0 0 0 15px;
+  margin-bottom: 10px;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .sectieNume a {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
 
 aside a {
-    display: block;
-    background-color: #2B2E33;
-    padding: 7px;
-    padding-left: 15px;
-    margin-top: 3px;
+  display: block;
+  background-color: #2b2e33;
+  padding: 7px;
+  padding-left: 15px;
+  margin-top: 3px;
 }
 
 /* ----------------------- */
 
 .content {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 menu {
-    margin: 0 1% 0 1%;
+  margin: 0 1% 0 1%;
 }
 
 .sectie {
-    width: 69%;
-    margin: 15px 0;
-    background-color: #222529;
-    padding: 10px;
-    border-radius: 0.5em;
+  width: 69%;
+  margin: 15px 0;
+  background-color: #222529;
+  padding: 10px;
+  border-radius: 0.5em;
 }
 
 .sectieElemente {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .carte {
-    margin: 10px;
-    float: left;
-    width: 140px;
-    text-align: center;
+  margin: 10px;
+  float: left;
+  width: 140px;
+  text-align: center;
 }
 
 .carte img {
-    width: 130px;
-    height: auto;
+  width: 130px;
+  height: auto;
 }
 
 .titlu {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 .autor {
-    color: rgb(150, 150, 150);
+  color: rgb(150, 150, 150);
 }
 
 /* -------------------------------------------------- */
 
 footer {
-    background-color: #222529;
-    padding: 0.5rem;
+  background-color: #222529;
+  padding: 0.5rem;
 }
 
 footer p {
-    display: inline-block;
-    width: 49%;
-    text-align: center;
+  display: inline-block;
+  width: 49%;
+  text-align: center;
 }
 
 /* -------------------------------------------------- */
 
 .forms {
-    display: block;
-    background-color: #222529;
-    width: 400px;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    margin: 30px auto;
-    font-size: 1.1rem;
-    box-shadow: 0 3px 10px #222529, 3px 0 10px #222529;
+  display: block;
+  background-color: #222529;
+  width: 400px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 30px auto;
+  font-size: 1.1rem;
+  box-shadow: 0 3px 10px #222529, 3px 0 10px #222529;
 }
 
 .forms h2 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .forms form label {
-    display: inline-block;
-    width: 30%;
-    text-align: center;
+  display: inline-block;
+  width: 30%;
+  text-align: center;
 }
 
 .forms form input {
-    height: 1.8rem;
-    width: 65%;
-    float: right;
-    opacity: 50%;
-    font-size: 1.1rem;
+  height: 1.8rem;
+  width: 65%;
+  float: right;
+  opacity: 50%;
+  font-size: 1.1rem;
 }
 
 .forms form input[type="submit"] {
-    color: #222529;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    border: 1px solid;
-    width: 33%;
+  color: #222529;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid;
+  width: 33%;
 }
 
 .forms form input[type="submit"]:hover {
-    opacity: 80%;
+  opacity: 80%;
 }
 
 /* -------------------------------------------------- */
 
 @media screen and (max-width: 1350px) {
-    .carte:last-child {
-        display: none;
-    }
+  .carte:last-child {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1120px) {
-    .carte:nth-last-child(2) {
-        display: none;
-    }
+  .carte:nth-last-child(2) {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    header img {
-        display: none;
-    }
+  header img {
+    display: none;
+  }
 
-    menu aside {
-        display: none;
-    }
+  menu aside {
+    display: none;
+  }
 
-    .sectie {
-        width: 100%;
-    }
+  .sectie {
+    width: 100%;
+  }
 
-    .carte:nth-last-child(2) {
-        display: flex;
-    }
+  .carte:nth-last-child(2) {
+    display: flex;
+  }
 
-    footer p {
-        display: block;
-        width: 100%;
-    }
+  footer p {
+    display: block;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 765px) {
-    .carte:nth-last-child(2) {
-        display: none;
-    }
+  .carte:nth-last-child(2) {
+    display: none;
+  }
 
-    nav ul {
-        padding: 0;
-    }
+  nav ul {
+    padding: 0;
+  }
 
-    nav ul li {
-        float: none;
-    }
+  nav ul li {
+    float: none;
+  }
 
-    nav ul li:last-child, nav ul li:nth-last-child(2) {
-        float: none;
-    }
+  nav ul li:last-child,
+  nav ul li:nth-last-child(2) {
+    float: none;
+  }
 
-    .dropdownMenu {
-        position: relative;
-    }
+  .dropdownMenu {
+    position: relative;
+  }
 
-    .carte {
-        margin: 3px;
-    }
+  .carte {
+    margin: 3px;
+  }
 
-    .dropdownShort div {
-        display: block;
-    }
+  .dropdownShort div {
+    display: block;
+  }
 
-    .dropdownMenuShort {
-        display: none;
-        position: relative;
-        padding: 0;
-    }
+  .dropdownMenuShort {
+    display: none;
+    position: relative;
+    padding: 0;
+  }
 
-    .dropdownShort:hover .dropdownMenuShort {
-        display: block;
-    }
+  .dropdownShort:hover .dropdownMenuShort {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    header h1, header h3 {
-        padding: 0 10px;
-    }
+  header h1,
+  header h3 {
+    padding: 0 10px;
+  }
 
-    header h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
+  header h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
 
-    header h3 {
-        font-size: 1rem;
-        margin-top: -25px;
-        text-align: center;
-    }
+  header h3 {
+    font-size: 1rem;
+    margin-top: -25px;
+    text-align: center;
+  }
 
-    .carte img {
-        width: 70px;
-        height: auto;
-    }
+  .carte img {
+    width: 70px;
+    height: auto;
+  }
 
-    :root {
-        font-size: 0.85rem;
-    }
+  :root {
+    font-size: 0.85rem;
+  }
 
-    .forms {
-        width: 100%;
-    }
+  .forms {
+    width: 100%;
+  }
 
-    .forms form label {
-        display: block;
-        text-align: left;
-        width: 100%;
-    }
+  .forms form label {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
 
-    .forms form input {
-        float: none;
-        width: 100%;
-    }
+  .forms form input {
+    float: none;
+    width: 100%;
+  }
 }
 
 /* -------------------------------------------------- */
