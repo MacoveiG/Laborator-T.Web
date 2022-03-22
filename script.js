@@ -97,13 +97,6 @@ function sub() {
 function clr() {
   let clr = document.getElementById("clr");
   if (clr.className.includes("clr")) {
-    clr.className = "clr1";
-  }
-}
-
-function clr1() {
-  let clr = document.getElementById("clr");
-  if (clr.className.includes("clr1")) {
-    clr.className = "clr";
+    clr.classList.toggle("clr1")
   }
 }
