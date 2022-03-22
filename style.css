@@ -1,3 +1,25 @@
+:root .clr {
+  --bg: #2c2f33;
+  --elem-bg: #222529;
+  --autor: 	#969696;
+  --nav: #222a3a;
+  --nav-h: 	#292929;
+  --aside-a: #2b2e33;
+  --color: #cac6c1;
+  --color-h: #777777;
+}
+
+:root .clr1 {
+  --bg: #ddd;
+  --elem-bg: #999999;
+  --autor: 	#333;
+  --nav: #005fad;
+  --nav-h: 	#ccc;
+  --aside-a: #7a7d83;
+  --color: #000;
+  --color-h: #ccc;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -24,8 +46,8 @@ body {
 }
 
 body {
-  color: #cac6c1;
-  background-color: #2c2f33;
+  color: var(--color);
+  background-color: var(--bg);
   display: flex;
   flex-direction: column;
 }
@@ -35,10 +57,8 @@ a {
   text-decoration: none;
 }
 
-/* hover rgb(41, 41, 41); */
-
 a:hover {
-  color: rgb(119, 119, 119);
+  color: var(--color-h);
 }
 
 /* -------------------------------------------------- */
@@ -102,7 +122,7 @@ nav ul {
   list-style-type: none;
   padding: 0 40px;
   overflow: hidden;
-  background-color: #222a3a;
+  background-color: var(--nav);
 }
 
 nav ul li {
@@ -127,7 +147,7 @@ nav ul li:nth-last-child(2) {
 
 nav ul li a:hover {
   color: inherit;
-  background-color: rgb(41, 41, 41);
+  background-color: var(--nav-h);
 }
 
 .dropdown ul li {
@@ -187,7 +207,7 @@ nav button:hover {
 }
 
 aside {
-  background-color: #222529;
+  background-color: var(--elem-bg);
   padding: 10px;
   margin-bottom: 15px;
   border-radius: 0.5em;
@@ -208,12 +228,12 @@ aside {
 
 .sectie,
 aside {
-  box-shadow: 3px 3px 10px #222529;
+  box-shadow: 3px 3px 10px var(--elem-bg);
 }
 
 aside a{
   display: block;
-  background-color: #2b2e33;
+  background-color: var(--aside-a);
   padding: 7px;
   padding-left: 15px;
   margin-top: 3px;
@@ -242,7 +262,7 @@ menu {
 .sectie {
   width: 69%;
   margin: 15px 0;
-  background-color: #222529;
+  background-color: var(--elem-bg);
   padding: 10px;
   border-radius: 0.5em;
 }
@@ -269,13 +289,13 @@ menu {
 }
 
 .autor {
-  color: rgb(150, 150, 150);
+  color: var(--autor);
 }
 
 /* -------------------------------------------------- */
 
 footer {
-  background-color: #222529;
+  background-color: var(--elem-bg);
   padding: 0.5rem;
 }
 
@@ -289,7 +309,7 @@ footer p {
 
 .forms {
   display: block;
-  background-color: #222529;
+  background-color: var(--elem-bg);
   width: 400px;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -316,7 +336,7 @@ footer p {
   font-size: 1.1rem;
 }
 
-.forms form input[type="button"] {
+.forms form input[type="submit"] {
   color: #222529;
   font-size: 1.1rem;
   border-radius: 5px;
@@ -324,7 +344,7 @@ footer p {
   width: 33%;
 }
 
-.forms form input[type="button"]:hover {
+.forms form input[type="submit"]:hover {
   opacity: 80%;
 }
 
@@ -531,3 +551,5 @@ img {
     opacity: 1;
   }
 }
+
+/* -------------------------------------------------- */

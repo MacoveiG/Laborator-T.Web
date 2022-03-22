@@ -84,17 +84,26 @@ function showSlides(n) {
 function sub() {
   let pass1 = document.getElementById("password").value;
   let pass2 = document.getElementById("password2").value;
-  let email = document.getElementById("email").value;
 
   if (pass1 != pass2) {
     document.getElementById("password2").style = "background-color: red";
   } else {
     document.getElementById("password2").style = "background-color: #3CBC8D";
   }
+}
 
-  if (!email.includes("@")) {
-    document.getElementById("email").style = "background-color: red";
-  } else {
-    document.getElementById("email").style = "background-color: #3CBC8D";
+/* -------------------------------------------------- */
+
+function clr() {
+  let clr = document.getElementById("clr");
+  if (clr.className.includes("clr")) {
+    clr.className = "clr1";
+  }
+}
+
+function clr1() {
+  let clr = document.getElementById("clr");
+  if (clr.className.includes("clr1")) {
+    clr.className = "clr";
   }
 }
