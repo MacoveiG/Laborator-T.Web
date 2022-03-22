@@ -42,10 +42,6 @@ window.onclick = function (e) {
     if (dropdown.classList.contains("show")) {
       dropdown.classList.remove("show");
     }
-    let dropdowns = document.getElementById("dropdownMenuShort");
-    if (dropdowns.classList.contains("show")) {
-      dropdowns.classList.remove("show");
-    }
   }
 };
 
