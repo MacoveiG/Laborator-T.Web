@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Librarium</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -25,12 +26,12 @@
 
       <nav>
         <div class="dropdownShort">
-          <div>Meniu</div>
-          <ul class="dropdownMenuShort">
+          <button class="dropbtns" onclick="fToggleS()">Meniu</button>
+          <ul class="dropdownMenuShort" id="dropdownMenuShort">
             <li><a href="index.html">Acasa</a></li>
             <li class="dropdown">
-              <a href="#">Genuri</a>
-              <ul class="dropdownMenu">
+              <button class="dropbtn" onclick="fToggle()">Genuri</button>
+              <ul class="dropdownMenu" id="dropdownMenu">
                 <li><a href="#">Lorem, ipsum.</a></li>
                 <li><a href="#">Lorem, ipsum.</a></li>
                 <li><a href="#">Lorem, ipsum.</a></li>
@@ -48,20 +49,39 @@
       </nav>
 
       <menu>
-        <aside>
-          <div>
-            <h2 class="sectieNume"><a href="#">Noutati</a></h2>
-            <a href="#">Noutatea</a>
-            <a href="#">Noutatea</a>
-            <a href="#">Noutatea</a>
-            <a href="#">Noutatea</a>
-            <a href="#">Noutatea</a>
-            <a href="#">Noutatea</a>
-            <a href="#">Noutatea</a>
-            <a href="#">Noutatea</a>
-            <a href="#">Noutatea</a>
-          </div>
-        </aside>
+        <div class="asides">
+          <aside>
+            <div>
+              <h2 class="sectieNume"><a href="#">Noutati</a></h2>
+              <span id="clock">00:00:00</span>
+              <a href="#">Noutatea</a>
+              <a href="#">Noutatea</a>
+              <a href="#">Noutatea</a>
+              <a href="#">Noutatea</a>
+              <a href="#">Noutatea</a>
+              <a href="#">Noutatea</a>
+              <a href="#">Noutatea</a>
+              <a href="#">Noutatea</a>
+              <a href="#">Noutatea</a>
+            </div>
+          </aside>
+
+          <aside>
+            <div>
+              <h2 class="sectieNume"><a href="#">Lorem</a></h2>
+              <span id="dat">00.00.0000</span>
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+            </div>
+          </aside>
+        </div>
 
         <div class="sectie">
           <h2 class="sectieNume"><a href="#">Populare</a></h2>
@@ -222,6 +242,33 @@
                 <div class="autor">Autor</div>
               </a>
             </div>
+          </div>
+        </div>
+
+        <div class="sectie">
+          <h2 class="sectieNume">Lorem, ipsum.</h2>
+
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="img/img_nature_wide.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="img/img_snow_wide.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="img/img_mountains_wide.jpg" style="width: 100%" />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
           </div>
         </div>
 
